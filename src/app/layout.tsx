@@ -21,7 +21,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className={cn("bg-white text-slate-900 ", inter.className)}
+      className={cn("bg-white text-slate-900", inter.className)}
     >
       <body className="min-h-screen bg-slate-50 dark:bg-slate-900  ">
         <Providers>{children}</Providers>
