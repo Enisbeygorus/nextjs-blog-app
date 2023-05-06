@@ -3,9 +3,7 @@
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 import { buttonVariants } from "./ui/Button";
-import SignInButton from "./ui/SignInButton";
 import Image from "next/image";
-// import SignOutButton from "./ui/SignOutButton";
 import { cn } from "@/lib/utils";
 
 const Navbar = async () => {
