@@ -13,23 +13,22 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-x-hidden">
+    <div
+      data-testid="home"
+      className="relative h-screen flex items-center justify-center overflow-x-hidden"
+    >
       <div className="container pt-20 max-w-7xl w-full mx-auto h-full">
         <div className="flex-col md:flex-row h-full flex items-start  lg:justify-center md:items-center">
           <div className="pt-10 w-full md:w-2/5 text-left">
-            <LargeHeading
-              size="lg"
-              className="three-d text-black dark:text-primary-light"
-            >
-              Random{" "}
-              <span className="text-light-secondary dark:text-dark-secondary">
+            <LargeHeading size="lg" className=" text-gray-700 mb-2">
+              Sky{" "}
+              <span className="text-primary2  dark:text-primary-light">
                 Blog
               </span>
             </LargeHeading>
 
             <Paragraph className="max-w-xl lg:text-left">
-              I don&apos;t know which content will be add tomorrow maybe
-              it&apos;s about dolphin or about clothes.
+              Developer portal for quality content with latest data and updates.
             </Paragraph>
           </div>
           <div className="w-full aspect-square flex justify-center items-center relative md:w-3/5 text-right mt-8 sm:mt-0">
@@ -43,8 +42,8 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-              src="/dice.png"
-              alt="dice"
+              src="/cloud.png"
+              alt="cloud"
             />
           </div>
 

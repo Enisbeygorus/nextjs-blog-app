@@ -1,7 +1,10 @@
+import LargeHeading from "@/components/ui/LargeHeading";
 import getBlogPostMetadata from "@/utils/getBlogPostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import "../../../styles/markdown.css";
+
 interface IBlogPostPageProps {
   params: { slug: string };
 }
@@ -23,10 +26,15 @@ const BlogPostPage = (props: IBlogPostPageProps) => {
   const slug = props.params.slug;
   const blog = getPostContent(slug);
   return (
-    <div className="relative flex flex-col items-center justify-center ">
+    <div
+      data-testid="blog-post-page"
+      className="relative flex flex-col items-center justify-center "
+    >
       <div className="max-w-2xl">
-        <h1>{blog.data.title}</h1>
-        <article className="prose">
+        <LargeHeading size="sm" className="text-gray-700 dark:text-white mb-2">
+          {blog.data.title}
+        </LargeHeading>
+        <article className="blog-post prose dark:text-white">
           <Markdown>{blog.content}</Markdown>
         </article>
       </div>

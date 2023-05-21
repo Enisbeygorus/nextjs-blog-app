@@ -1,0 +1,13 @@
+.blog-post strong {
+  color: #555e6c;
+}
+.blog-post blockquote {
+  color: #555e6c;
+}
+
+.dark .blog-post strong {
+  color: white;
+}
+.dark .blog-post blockquote {
+  color: white;
+}

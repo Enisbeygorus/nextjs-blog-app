@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import { Toaster } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
@@ -28,10 +29,11 @@ export default function RootLayout({
 
         <Toaster position="top-center" />
 
-        {/* @ts-expect-error Server Component */}
         <Navbar />
+
+        <Footer />
         {/* Allow more height for mobile menu on mobile */}
-        <div className="h-40 md:hidden" />
+        <div className="h-20 md:hidden bg-white" />
       </body>
     </html>
   );
