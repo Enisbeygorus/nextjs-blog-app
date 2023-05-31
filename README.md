@@ -66,17 +66,18 @@ This project renders blogs with static content. To add new blog we need to add n
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+To install project we need to install Node.js and npm.
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+First we need to install node.js. You can click the link to donwload node.js remember download to LTS version for stable version.
+
+1. [download node.js](https://nodejs.org/en)
+
+2. npm
+   ```sh
+   npm install npm@latest -g
+   ```
 
 ### Installation
 
@@ -95,7 +96,7 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-To start project. Go to prohect root folder write
+To start project. Go to project root folder write
 
 ```sh
 npm run dev
@@ -105,10 +106,8 @@ and open http://localhost:3000/ in browser.
 
 you can see blog link, click it and it will route you to blog page.
 
-You can add new blog with **.md file**.
-
 If you want to add new blog page, create a ".md file" and insert it to **/src/content/blogs**
 
-You can coppy **example-template.md** in blogs folder.
+You can copy **example-template.md** in blogs folder to write your own content.
 
-After adding new blog page just re-start server.
+After adding new blog page just restart server.
