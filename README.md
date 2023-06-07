@@ -111,3 +111,27 @@ If you want to add new blog page, create a ".md file" and insert it to **/src/co
 You can copy **example-template.md** in blogs folder to write your own content.
 
 After adding new blog page just restart server.
+
+## Usage with Docker
+
+To start project with docker. First install docker.
+
+To build an image, in root folder copy the following code and run it.
+
+```sh
+docker build --tag node-next-js-blog-app .
+```
+
+In Dockerfile expose port is 3000. To run image in container type following code.
+
+```sh
+docker run -p 3000:3000 node-next-js-blog-app
+```
+
+If you want to start app in different port type following code
+
+and change the &lt;port> which port you want it to run.
+
+```sh
+docker run -p <port>:3000 node-next-js-blog-app
+```
